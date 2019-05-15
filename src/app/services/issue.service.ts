@@ -35,4 +35,14 @@ export class IssueService {
     };
     return this.http.post(`${this.uri}/issues/add`, issue);
   }
+
+  updateIssue(id, title, responsible, description, severity) {
+    const issue = {
+      title: title,
+      responsible: responsible,
+      description: description,
+      severity: severity
+    };
+    return this.http.post(`${this.uri}/issue/update/${id}`, issue);
+  }
 }
