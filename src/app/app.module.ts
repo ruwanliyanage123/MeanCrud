@@ -22,6 +22,7 @@ import {
   MatDividerModule,
   MatSnackBarModule
 } from '@angular/material';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, EditComponent, CreateComponent, ListComponent],
@@ -39,7 +40,8 @@ import {
     MatTableModule,
     MatDividerModule,
     MatSnackBarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [IssueService],
   bootstrap: [AppComponent]
