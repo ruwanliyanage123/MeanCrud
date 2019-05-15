@@ -9,6 +9,8 @@ import { ListComponent } from './components/list/list.component';
 import { MatToolbarModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 
+import { IssueService } from './services/issue.service';
+
 @NgModule({
   declarations: [AppComponent, EditComponent, CreateComponent, ListComponent],
   imports: [
@@ -17,7 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatToolbarModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [IssueService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
