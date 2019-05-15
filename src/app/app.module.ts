@@ -23,6 +23,14 @@ import {
   MatSnackBarModule
 } from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
+import { Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'create', component: CreateComponent },
+  { path: 'edit/:id', component: EditComponent },
+  { path: 'list', component: ListComponent },
+  { path: '', redirectTo: '/list', pathMatch: 'full' }
+];
 
 @NgModule({
   declarations: [AppComponent, EditComponent, CreateComponent, ListComponent],
