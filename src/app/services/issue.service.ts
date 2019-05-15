@@ -5,5 +5,14 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class IssueService {
+  uri = 'http://localhost:3000';
   constructor(private http: HttpClient) {}
+
+  getIssues() {
+    return this.http.get(`${this.uri}/issues`);
+  }
+
+  getIssuesById(id) {
+    return this.http.get(`${this.uri}/issues/${id}`);
+  }
 }
