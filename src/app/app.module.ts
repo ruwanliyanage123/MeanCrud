@@ -10,6 +10,18 @@ import { MatToolbarModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 
 import { IssueService } from './services/issue.service';
+import {
+  MatFormFieldModule,
+  MatInputModule,
+  MatOptionModule,
+  MatSelectModule,
+  MatIconModule,
+  MatButtonModule,
+  MatCardModule,
+  MatTableModule,
+  MatDividerModule,
+  MatSnackBarModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [AppComponent, EditComponent, CreateComponent, ListComponent],
@@ -17,6 +29,16 @@ import { IssueService } from './services/issue.service';
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatTableModule,
+    MatDividerModule,
+    MatSnackBarModule,
     AppRoutingModule
   ],
   providers: [IssueService],
